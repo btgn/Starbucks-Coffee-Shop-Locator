@@ -148,7 +148,7 @@ public class CoffeeShopLocator extends HttpServlet {
     		for(CoffeeShop csp : los){
     			int temp=0;
     			temp = city.length();
-    			if(city.equalsIgnoreCase(csp.getCity()) || city.equalsIgnoreCase(csp.getCity().substring(0, temp))){
+    			if(city.equalsIgnoreCase(csp.getCity()) || city.equalsIgnoreCase(csp.getCity())){
     				out.println("<tr><td>&nbsp;" + csp.getCity() + "</td><td>&nbsp;" + csp.getAddress().replace('"', ' ').replace(';', ',') + "</td></tr>");
            		}
     	
